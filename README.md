@@ -16,7 +16,7 @@ To assist the visually impaired passengers to travel more independently, a POC h
 
 Starting with data acquisition, we downloaded YouTube videos of public buses arriving at a bus stop in Singapore. Individual frames are extracted from the video every 1 second and saved as images. The collection of images were labelled using [CVAT](https://cvat.org/). Bounding boxes were specified around each bus panel only for buses arriving at the bus stop. A manual review of the annotations was done to ensure that the bus panels are properly labelled. The saved annotations were exported to YOLO format. The custom dataset was then formated and split into train, validation, and test set.
 
-Following the data preparation process, we trained YOLOv5 for custom object detection to detect the bus panels and evaluated the model's performance using the mean Average Precision (mAP) metric.
+Following the data preparation process, we trained YOLOv5 on our custom object (Bus Panel) using the model’s pre-trained weights for transfer learning. The model's performance was evaluated using the mean Average Precision (mAP) metric. 
 
 * What were your findings?
 * What risks/limitations/assumptions affect these findings?
