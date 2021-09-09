@@ -12,9 +12,11 @@ Mobility and orientation are the biggest challenges for people with visual impai
 
 
 ## Executive Summary
-To assist visually impaired passengers to travel more independently, a POC have been created to detect and recognize bus number of public buses arriving at a bus stop in Singapore. The design made use of a combination of Object Detection (using YOLOv5) and Optical Character Recognition (OCR), to extract bus number from bus panel and convert the extracted text for audio notification.
+With a goal in mind to help visually impaired passengers to travel more independently, a POC has been created to detect and recognise bus number of public buses arriving at a bus stop in Singapore. The design made use of a combination of Object Detection (using YOLOv5) and Optical Character Recognition (OCR), to extract bus numbers from the bus panel and convert the extracted text for audio notification.
 
-Starting with data acquisition, we downloaded YouTube videos of public buses arriving at a bus stop in Singapore.
+Starting with data acquisition, we downloaded YouTube videos of public buses arriving at a bus stop in Singapore. Individual frames are extracted from the video every 1 second and saved as images. The collection of images were labelled using [CVAT](https://cvat.org/). Bounding boxes were specified around each bus panel only for buses arriving at the bus stop. A manual review of the annotations was done to ensure that the bus panels are properly labelled. The saved annotations were exported to YOLO format.
+
+* Train YOLOv5 for custom object detection to detect the bus panels. This will be done using Google Colab.
 
 * Where did you get your data?
 * What are your metrics?
