@@ -12,14 +12,12 @@ Mobility and orientation are the biggest challenges for people with visual impai
 
 
 ## Executive Summary
-With a goal in mind to assist the visually impaired passengers to travel more independently, a POC has been created to detect and recognise bus number of public buses arriving at a bus stop in Singapore. The design made use of a combination of Object Detection (using YOLOv5) and Optical Character Recognition (OCR), to extract bus numbers from the bus panel and convert the extracted text for audio notification.
+To assist the visually impaired passengers to travel more independently, a POC has been created to detect and recognise bus number of public buses arriving at a bus stop in Singapore. The design made use of a combination of Object Detection (using YOLOv5) and Optical Character Recognition (OCR), to extract bus numbers from the bus panel and convert the extracted text for audio notification.
 
-Starting with data acquisition, we downloaded YouTube videos of public buses arriving at a bus stop in Singapore. Individual frames are extracted from the video every 1 second and saved as images. The collection of images were labelled using [CVAT](https://cvat.org/). Bounding boxes were specified around each bus panel only for buses arriving at the bus stop. A manual review of the annotations was done to ensure that the bus panels are properly labelled. The saved annotations were exported to YOLO format.
+Starting with data acquisition, we downloaded YouTube videos of public buses arriving at a bus stop in Singapore. Individual frames are extracted from the video every 1 second and saved as images. The collection of images were labelled using [CVAT](https://cvat.org/). Bounding boxes were specified around each bus panel only for buses arriving at the bus stop. A manual review of the annotations was done to ensure that the bus panels are properly labelled. The saved annotations were exported to YOLO format. The custom dataset was then formated and split into train, validation, and test set.
 
-* Train YOLOv5 for custom object detection to detect the bus panels. This will be done using Google Colab.
+Following the data preparation process, we trained YOLOv5 for custom object detection to detect the bus panels and evaluated the model's performance using the mean Average Precision (mAP).
 
-* Where did you get your data?
-* What are your metrics?
 * What were your findings?
 * What risks/limitations/assumptions affect these findings?
 
