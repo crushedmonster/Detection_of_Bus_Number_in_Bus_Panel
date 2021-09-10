@@ -30,3 +30,14 @@ The description and walkthrough for the entire project is available in the noteb
 
 
 ## Conclusion
+With a goal in mind of designing a POC to detect and recognize bus information at a bus stop, this project proved that it is indeed possible to make use of computer vision to achieve this.
+
+
+
+### Limitations
+* Improving the OCR capabilities
+* Better ways of preprocessing the images before feeding into the OCR software
+
+### Future Exploration
+* Collect more images of buses at night
+* Test it on videos / incorporate the trained weights for inference on camera
