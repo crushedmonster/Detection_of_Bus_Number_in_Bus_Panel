@@ -26,6 +26,6 @@ There are a total of three notebooks in this project, namely:
 
 *Note: The custom YOLOv5 training is done entirely on Google Colab. Google Colab is a free cloud service that supports free GPU*
 
-The primary reason for this is to utilise the free GPU offered by Google to train the YOLOv5 model. That being said, it may also be possible to complete this project using a traditional CPU, although the process may take slightly longer.
+The primary reason for using Google Colab is to utilise the free GPU offered by Google to train the YOLOv5 model. That being said, it may also be possible to complete this project using a traditional CPU, although the process may take slightly longer.
 
 The description and walkthrough for the entire project is available in the notebooks. The datasets for this project are accessible on [Google Drive](https://drive.google.com/drive/folders/1RBHFOXFMMLCXX0rdxxigoxZa4Ax1GGOz?usp=sharing).
