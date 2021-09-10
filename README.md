@@ -30,7 +30,7 @@ The description and walkthrough for the entire project is available in the noteb
 
 
 ## Conclusion
-With the problem statement in mind to help people with visual impairment to determine if it’s the right bus they need through Optical Character Recognition (OCR) for the text on the bus, we have sucessfully created a POC for deployment and tested that it is indeed tangible to make use of computer vision to solve our problem.
+With the problem statement in mind to help people with visual impairment to determine if it’s the right bus they need, we have successfully created a POC for deployment and tested that it is indeed tangible to make use of computer vision-based system to solve our problem. We were able to train YOLOv5 on our custom object (bus panel) and found that YOLOv5 trains quickly, inferences quickly, and performs really well. However, there are still some limitations on the pipeline which will be explained below.
 
 
 ### Limitations
@@ -39,4 +39,4 @@ With the problem statement in mind to help people with visual impairment to dete
 
 ### Future Exploration
 * Collect more images of buses at night
-* Test it on videos / incorporate the trained weights for inference on camera
+* Test it on videos or on a live camera
