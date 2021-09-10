@@ -35,7 +35,7 @@ when applied to recognize the bus number from the bus panel. Eg. Not being able 
 
 
 ### Future Exploration
-* Try out different OCR software
-* Better ways of preprocessing the images before feeding into the OCR software
+* Try out different OCR software.
+* Better ways of preprocessing the images before feeding into the OCR software.
 * Train the object detection model on images of buses at night since the current model is largely trained on images of buses in the day.
-* Test the OCR pipeline on a video or on a live camera
+* Test the OCR pipeline on a video or on a live camera.
