@@ -18,5 +18,7 @@ Starting with data acquisition, we downloaded YouTube videos of public buses arr
 
 Following the data preparation process, we trained YOLOv5 on our custom object (bus panel) using the model’s pre-trained weights for transfer learning. The model's performance was evaluated using the mean Average Precision (mAP) metric. Our model performed pretty well as the mAP score converges close to 100%. Using this model we were able to detect and localise the bounding box coordinates of bus panel contained in an image. We consider the model to be performing relatively well given that it is successful in generating predictions on new images. Finally, the custom object dection model is incoporated into the OCR pipeline to transform the bus number into raw text data and convert the extracted text to audio.
 
-* What risks/limitations/assumptions affect these findings?
-
+There are a total of three notebooks in this project, namely:
+* 01_Data_Preparation.ipynb
+* 02_Custom_YOLOv5_Training.ipynb
+* 03_OCR_Pipeline.ipynb
